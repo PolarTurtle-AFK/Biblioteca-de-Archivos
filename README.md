@@ -1,4 +1,4 @@
-# Biblioteca de Archivos v1
+# Biblioteca de Archivos v2
 
 Página web simple para visualizar y descargar imágenes desde una biblioteca organizada en tarjetas.
 

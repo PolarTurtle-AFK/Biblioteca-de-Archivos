@@ -1,0 +1,74 @@
+html{
+        background-color: rgb(122, 155, 245);
+}
+
+header{
+    width: 100%;
+}
+
+#titulo{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(164, 189, 255);
+}
+
+#posts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headpost{
+    background-color: rgb(226, 226, 255);
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.post {
+    background-color: rgb(209, 230, 255);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.boton{
+    background-color: rgb(44, 255, 44);
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+
+.imagen{
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links{
+    display:flex;
+    height: 100%;
+    flex-flow: row wrap
+}
+.link-1{
+    order: 0;
+    background-color: rgb(170, 221, 255);
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+.link-2{
+    order: 1;
+    background-color: rgb(170, 221, 255);
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}

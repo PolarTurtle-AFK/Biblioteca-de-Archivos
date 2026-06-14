@@ -1,5 +1,5 @@
-"use strict";
-function DescargarArchivo(indice) {
+import { archivos } from "./archivos.js";
+export function DescargarArchivo(indice) {
     let archivo = archivos[indice];
     archivo.descargar();
     let contador = document.getElementById(`descargas-${indice}`);

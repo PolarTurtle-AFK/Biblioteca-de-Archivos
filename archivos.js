@@ -1,5 +1,4 @@
-"use strict";
-class Archivo {
+export class Archivo {
     nombre;
     descripcion;
     ruta;
@@ -16,7 +15,7 @@ class Archivo {
         this.descargas++;
     }
 }
-const archivos = [
+export const archivos = [
     new Archivo("Asombrao", "D:", "img/asombrao.jpg", "Imagen"),
     new Archivo("Alejandro Liz", "Profesor", "img/Alejandro.webp", "Imagen"),
     new Archivo("Bocchi", "Bocchi the fade", "img/Bocchi.jpg", "Imagen"),

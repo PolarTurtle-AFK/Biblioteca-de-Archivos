@@ -1,5 +1,6 @@
+import { archivos } from "./archivos.js";
 
-function DescargarArchivo(indice: number) {
+export function DescargarArchivo(indice: number) {
     let archivo = archivos[indice]
     archivo.descargar()
 

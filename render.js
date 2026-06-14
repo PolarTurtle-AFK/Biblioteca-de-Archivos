@@ -1,4 +1,5 @@
-"use strict";
+import { archivos } from "./archivos.js";
+import { DescargarArchivo } from "./descargas.js";
 const posts = document.getElementById("posts");
 console.log(archivos);
 const CantidadArchivos = document.getElementById("archivos");
@@ -18,7 +19,7 @@ if (posts) {
 
                     <p>Tipo de Archivo: ${archivo.tipo}</p>
 
-                    <a href="${archivo.ruta}" download class="boton" onclick="DescargarArchivo(${i}); return false";>
+                    <a href="${archivo.ruta}" class="boton" id="btn-${i}">
                         Descargar
                     </a>
 
@@ -26,5 +27,14 @@ if (posts) {
                 </div>
             </article>
         `;
+    }
+}
+for (let i = 0; i < archivos.length; i++) {
+    const boton = document.getElementById(`btn-${i}`);
+    if (boton) {
+        boton.addEventListener("click", (e) => {
+            e.preventDefault();
+            DescargarArchivo(i);
+        });
     }
 }

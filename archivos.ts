@@ -1,4 +1,4 @@
-class Archivo {
+export class Archivo {
     nombre: string;
     descripcion: string;
     ruta: string;
@@ -23,7 +23,7 @@ class Archivo {
     }
 }
 
-const archivos: Archivo[] = [
+export const archivos: Archivo[] = [
     new Archivo("Asombrao", "D:", "img/asombrao.jpg", "Imagen"),
     new Archivo("Alejandro Liz", "Profesor", "img/Alejandro.webp", "Imagen"),
     new Archivo("Bocchi", "Bocchi the fade", "img/Bocchi.jpg", "Imagen"),

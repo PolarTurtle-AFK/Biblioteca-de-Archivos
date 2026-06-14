@@ -11,6 +11,11 @@ header{
     text-align: center;
     background-color: rgb(164, 189, 255);
 }
+#CantidadArchivos{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(164, 189, 255);
+}
 
 #posts{
     width: 100%;
@@ -39,6 +44,14 @@ header{
     border-radius: 8px;
     padding: 10px 20px;
     border: 2px solid black;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(20, 220, 20);
 }
 
 .imagen{
@@ -65,10 +78,16 @@ footer{
     padding: 10px 20px;
     border: 2px solid black;
 }
+.link-1:hover {
+    background-color: rgb(146, 190, 219);
+}
 .link-2{
     order: 1;
     background-color: rgb(170, 221, 255);
     border-radius: 8px;
     padding: 10px 20px;
     border: 2px solid black;
+}
+.link-2:hover {
+    background-color: rgb(146, 190, 219);
 }

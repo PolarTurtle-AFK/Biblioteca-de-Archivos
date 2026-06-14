@@ -26,6 +26,7 @@ Página web simple para visualizar y descargar imágenes desde una biblioteca or
 /Proyecto
 │── index.html
 │── style.css
+│── boton.js
 │── /img
      ├── asombrao.jpg
      ├── Alejandro.webp

@@ -1,93 +1,103 @@
-html{
-        background-color: rgb(122, 155, 245);
+html {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
 }
 
-header{
-    width: 100%;
-}
-
-#titulo{
-    width: 100%;
+#titulo, #CantidadArchivos {
     text-align: center;
-    background-color: rgb(164, 189, 255);
-}
-#CantidadArchivos{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(164, 189, 255);
+    padding: 12px;
+    background-color: #111827;
+    border-bottom: 1px solid #1f2937;
+    margin: 0;
 }
 
-#posts{
-    width: 100%;
+#posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #1e293b;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #111827;
+    transition: 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.headpost {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-.headpost{
-    background-color: rgb(226, 226, 255);
-    border: 2px solid black;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
+.imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #111827;
 }
-.post {
-    background-color: rgb(209, 230, 255);
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
-    text-align: center;
+
+h2 {
+    font-size: 15px;
+    margin: 6px 0;
 }
-.boton{
-    background-color: rgb(44, 255, 44);
-    border-radius: 8px;
-    padding: 10px 20px;
-    border: 2px solid black;
+
+p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin: 4px 0;
+}
+
+.boton {
     display: inline-block;
+    margin-top: 8px;
+    padding: 7px 10px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
     text-decoration: none;
-    color: black;
-    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+    text-align: center;
 }
 
 .boton:hover {
-    background-color: rgb(20, 220, 20);
+    background-color: #1d4ed8;
 }
 
-.imagen{
-    border-radius: 8px;
-    border: 2px solid black;
-}
-
-footer{
+footer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 20px;
 }
 
-.links{
-    display:flex;
-    height: 100%;
-    flex-flow: row wrap
+.links {
+    display: flex;
+    gap: 10px;
 }
-.link-1{
-    order: 0;
-    background-color: rgb(170, 221, 255);
+
+.link-1, .link-2 {
+    background-color: #111827;
     border-radius: 8px;
-    padding: 10px 20px;
-    border: 2px solid black;
+    padding: 10px 16px;
+    border: 1px solid #1f2937;
+    transition: 0.2s;
 }
-.link-1:hover {
-    background-color: rgb(146, 190, 219);
+
+.link-1:hover, .link-2:hover {
+    background-color: #1e293b;
 }
-.link-2{
-    order: 1;
-    background-color: rgb(170, 221, 255);
-    border-radius: 8px;
-    padding: 10px 20px;
-    border: 2px solid black;
-}
-.link-2:hover {
-    background-color: rgb(146, 190, 219);
+
+a {
+    color: #e2e8f0;
+    text-decoration: none;
 }

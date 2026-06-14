@@ -2,7 +2,7 @@ import { archivos } from "./archivos.js";
 import { DescargarArchivo } from "./descargas.js";
 const posts = document.getElementById("posts");
 console.log(archivos);
-const CantidadArchivos = document.getElementById("archivos");
+const CantidadArchivos = document.getElementById("CantidadArchivos");
 if (CantidadArchivos) {
     CantidadArchivos.textContent = `Archivos disponibles: ${archivos.length}`;
 }

@@ -33,7 +33,6 @@ for (let i = 0; i < archivos.length; i++) {
     const boton = document.getElementById(`btn-${i}`);
     if (boton) {
         boton.addEventListener("click", (e) => {
-            e.preventDefault();
             DescargarArchivo(i);
         });
     }

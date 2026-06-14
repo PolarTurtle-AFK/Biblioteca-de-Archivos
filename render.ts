@@ -38,7 +38,6 @@ for (let i = 0; i < archivos.length; i++) {
 
     if (boton) {
         boton.addEventListener("click", (e) => {
-            e.preventDefault();
             DescargarArchivo(i);
         });
     }

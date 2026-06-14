@@ -22,7 +22,7 @@ if (posts){
 
                     <p>Tipo de Archivo: ${archivo.tipo}</p>
 
-                    <a href="${archivo.ruta}" class="boton" id="btn-${i}">
+                    <a href="${archivo.ruta}" download class="boton" id="btn-${i}">
                         Descargar
                     </a>
 
